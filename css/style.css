@@ -1,52 +1,60 @@
-﻿/* Base Styling */
+﻿/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f9ff; /* Light blue background */
-    color: #333; /* Dark text for contrast */
+    background-color: #f4f9ff; /* Light blue */
+    color: #333; /* Dark text for readability */
 }
 
-/* Header and Navigation */
 header {
     background-color: #003366; /* Dark blue */
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Navigation Styling */
 nav {
+    background-color: #00509e; /* Medium blue */
     display: flex;
     justify-content: center;
-    gap: 15px;
-    padding: 10px 0;
-    background-color: #00509e; /* Medium blue */
+    padding: 10px;
 }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
 
     nav a {
         text-decoration: none;
         color: white;
+        font-weight: bold;
         padding: 8px 15px;
         border-radius: 5px;
         transition: background-color 0.3s ease;
     }
 
         nav a:hover {
-            background-color: #003366; /* Dark blue hover */
+            background-color: #003366; /* Dark blue hover effect */
         }
 
-/* Page Sections */
-section {
-    padding: 20px;
-    margin: 10px auto;
+/* Main Content Styling */
+main {
     max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* Content box */
     border-radius: 10px;
-    background-color: white; /* White cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     text-align: center;
     background-color: #003366;
@@ -54,28 +62,4 @@ footer {
     padding: 15px 0;
     margin-top: 20px;
     font-size: 0.9em;
-}
-
-/* Buttons */
-button {
-    background-color: #00509e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-    button:hover {
-        background-color: #003366;
-    }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
