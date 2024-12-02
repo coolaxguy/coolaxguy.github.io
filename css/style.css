@@ -63,3 +63,8 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
 }
+.active {
+    font-weight: bold;
+    color: #0056b3; /* Example: Dark blue for the active link */
+    text-decoration: underline;
+}
