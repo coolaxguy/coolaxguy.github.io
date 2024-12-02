@@ -1,0 +1,28 @@
+﻿bodybody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    background: #222;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+        transition: background-color 0.3s;
+    }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
